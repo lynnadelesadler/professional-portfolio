@@ -6,6 +6,8 @@
   <!--A meta viewport element gives the browser instructions on how to control the page's dimensions and scaling.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lynn Sadler Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/52b038c176.js" crossorigin="anonymous"></script>
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +33,7 @@
   <!-- Body -->
 
   <script>
-    var myText = 'Welcome to my Portfolio Page';
+    var myText = 'Welcome to my Portfolio';
     //split(“”) The split function will create an array from our string.
     var myArray = myText.split("");
     var loopTimer;
@@ -44,7 +46,7 @@
         return false;
       }
       //setTimeout() The setTimeout function will control the speed of our animation.
-      loopTimer = setTimeout('frameLooper()', 100);
+      loopTimer = setTimeout('frameLooper()', 200);
     }
     frameLooper();
   </script>
@@ -57,11 +59,11 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-              role="tab" aria-controls="home" aria-selected="true">Home</button>
+              role="tab" aria-controls="home" aria-selected="true">About Me</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-              role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            <button class="nav-link" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume" type="button"
+              role="tab" aria-controls="resume" aria-selected="false">Resume</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
@@ -98,7 +100,7 @@
                 </div>
 
                 <div class="carousel-item">
-                  <img src="./assets/Images/trail.jpg" class="d-block w-100 " alt="woods picture">
+                  <img src="./assets/Images/redrocks2.jpg" class="d-block w-100 " alt="woods picture">
                   <div class="carousel-caption d-none d-md-block fw-bold">
                   </div>
                 </div>
@@ -118,7 +120,7 @@
 
             </div>
             <p class="space">
-              Hello and thank you for visiting my Portfolio page! My name is Lynn Sadler, and I am currently
+              Hello and thank you for visiting my Portfolio! I am currently
               embarking on my journey as a full stack web developer through an accelerated 6 month bootcamp
               program at UConn. My curiosity to dissect the user-facing systems tied to the back end of the
               application has driven me to obtain my skills in the Cross-discipline of Full Stack Development.
@@ -127,7 +129,7 @@
             <p class="space">
               I have spent 12 passionate years in HealthCare IT supporting the Patient Electronic
               Health Record. Throughout my career I've built custom features for end user layout and interactions
-              linked to back-end triggers resulting in outcomes that enhancing patient care workflow and hospital
+              linked to back-end triggers resulting in outcomes to enhance patient care workflow and hospital
               throughput metrics. It's been extremely rewarding to focus my skills on projects optimizing the EHR
               for all clinical roles that impact HealthCare outcomes. </p>
             <p class="space">
@@ -138,24 +140,26 @@
               I have also embarked on many longer journeys over to Block Island, Martha's Vineyard and Nantucket.
             </p>
             <p class="space-italic"> My hobbies embody my Motto - "Enjoy the journey". It's not always about the
-              destination but the journey
-              you took to get there!</p>
+              destination but the journey you took to get there!</p>
           </div>
 
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <p>
-                <ul class="space">
-                  <li class="space"><strong>Email:</strong> <a href="#">lynnadelesadler@yahoo.com</a></li>
-                  <li class="space"><strong>Github:</strong> <a
-                      href="https://github.com/lynnadelesadler">https://github.com/lynnadelesadler</a></li>
-                  <li class="space"><strong>Phone:</strong> <a href="#">(203) 520-0726</a></li>
+          <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+            <p>
+              <ul class="space">
+                <li class="space"><i class="fa-solid fa-file"></i><a href="./assets/Lynn Sadler Resume.pdf"> Click here to open Lynn Sadler's Resume</a></p></li>
                 </ul>
-                </p>
-            </div>
+                </div>
           </div>
-
+         
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <p><a href="./assets/Lynn Sadler Resume.pdf">Click here to open Lynn Sadler's Resume</a></p>
+            <p>
+              <ul class="space">
+                <li class="space"><i class="fa-regular fa-envelope"></i><strong> Email:</strong> <a href="#">lynnadelesadler@yahoo.com</a></li>
+                <li class="space"><i class="fa-brands fa-github"></i><strong> Github:</strong> <a href="https://github.com/lynnadelesadler">https://github.com/lynnadelesadler</a></li>
+                <li class="space"><i class="fa-solid fa-phone"></i><strong> Phone:</strong> <a href="#">(203) 520-0726</a></li>
+              </ul>
+              </p>
+        
           </div>
 
         </div>
