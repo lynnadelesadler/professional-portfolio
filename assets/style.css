@@ -1,9 +1,10 @@
 /* Universal selector */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap'); 
 * {
   box-sizing: border-box;
   padding: o;
   margin: 0;
-  font-family:'Cormorant+Garamon';
+  font-family:'Raleway', sans-serif;
 }
 
 header {
@@ -21,6 +22,7 @@ header h1 {
   display: inline-block;
   font-size: 48px;
   flex-wrap: wrap;
+  font-family:'Cormorant+Garamon';
 }
 
 /* sets the color Header Sadler to different color */
